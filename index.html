@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngapp">
+    <head>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="application.js"></script>
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Assignment</h1>
+            <h2>Module One</h2>
+        </header>
+        <section ng-controller="controller">
+            <p>
+                Following is the text box: <input type="text" ng-model="entrada" />                
+            </p>
+            <p>
+                <button ng-click="validate();">Check if Too Much</button>
+                <br />
+                {{salida}}
+            </p>
+        </section>
+    </body>
+</html>
